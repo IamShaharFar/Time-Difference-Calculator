@@ -1,0 +1,34 @@
+Welcome to the Time Difference Calculator!
+Enter two timestamps as:
+  Year Month Day Hour Minute Second Year Month Day Hour Minute Second
+Example:
+  2023 12 31 23 59 59 2024 1 1 0 0 0
+Press Ctrl+D to exit.
+
+>> Enter first time (Year Month Day Hour Minute Second): >> Enter first time (Year Month Day Hour Minute Second): 
+First time:  1 BC, 01/01 00:00:00
+Second time: 11 AD, 01/01 00:00:00
+Time difference: 346896000 seconds
+In readable format: 11 years, 0 days, 0 hours, 0 minutes, 0 seconds
+>> Enter first time (Year Month Day Hour Minute Second): >> Enter first time (Year Month Day Hour Minute Second): 
+First time:  1 BC, 12/31 23:59:59
+Second time: 1 AD, 01/01 00:00:00
+Time difference: 1 seconds
+In readable format: 0 years, 0 days, 0 hours, 0 minutes, 1 seconds
+>> Enter first time (Year Month Day Hour Minute Second): >> Enter first time (Year Month Day Hour Minute Second): 
+First time:  2023 AD, 01/01 00:00:00
+Second time: 2023 AD, 01/02 00:00:00
+Time difference: 86400 seconds
+In readable format: 0 years, 1 days, 0 hours, 0 minutes, 0 seconds
+>> Enter first time (Year Month Day Hour Minute Second): >> Enter first time (Year Month Day Hour Minute Second): 
+First time:  2022 AD, 12/31 23:59:00
+Second time: 2023 AD, 01/01 00:00:00
+Time difference: 60 seconds
+In readable format: 0 years, 0 days, 0 hours, 1 minutes, 0 seconds
+>> Enter first time (Year Month Day Hour Minute Second): >> Enter first time (Year Month Day Hour Minute Second): 
+First time:  1 BC, 01/01 00:00:00
+Second time: 1 BC, 01/02 00:00:00
+Time difference: 86400 seconds
+In readable format: 0 years, 1 days, 0 hours, 0 minutes, 0 seconds
+>> Enter first time (Year Month Day Hour Minute Second): 
+Processed 5 pairs of times, 5 were valid.

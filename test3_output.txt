@@ -1,0 +1,37 @@
+Welcome to the Time Difference Calculator!
+Enter two timestamps as:
+  Year Month Day Hour Minute Second Year Month Day Hour Minute Second
+Example:
+  2023 12 31 23 59 59 2024 1 1 0 0 0
+Press Ctrl+D to exit.
+
+>> Enter first time (Year Month Day Hour Minute Second): >> Enter first time (Year Month Day Hour Minute Second): 
+First time:  2023 AD, 13/01 00:00:00
+Second time: 2024 AD, 01/01 00:00:00
+Error in first time: Month must be between 1 and 12, got 13
+>> Enter first time (Year Month Day Hour Minute Second): >> Enter first time (Year Month Day Hour Minute Second): 
+First time:  2023 AD, 01/32 00:00:00
+Second time: 2024 AD, 01/01 00:00:00
+Error in first time: Day must be between 1 and 31 for month 1, got 32
+>> Enter first time (Year Month Day Hour Minute Second): >> Enter first time (Year Month Day Hour Minute Second): 
+First time:  2023 AD, 01/01 24:00:00
+Second time: 2024 AD, 01/01 00:00:00
+Error in first time: Hour must be between 0 and 23, got 24
+>> Enter first time (Year Month Day Hour Minute Second): >> Enter first time (Year Month Day Hour Minute Second): 
+First time:  2023 AD, 01/01 00:60:00
+Second time: 2024 AD, 01/01 00:00:00
+Error in first time: Minute must be between 0 and 59, got 60
+>> Enter first time (Year Month Day Hour Minute Second): >> Enter first time (Year Month Day Hour Minute Second): 
+First time:  2023 AD, 01/01 00:00:60
+Second time: 2024 AD, 01/01 00:00:00
+Error in first time: Second must be between 0 and 59, got 60
+>> Enter first time (Year Month Day Hour Minute Second): >> Enter first time (Year Month Day Hour Minute Second): 
+First time:  2023 AD, 01/01 00:00:00
+Second time: 2024 AD, 04/31 00:00:00
+Error in second time: Day must be between 1 and 30 for month 4, got 31
+>> Enter first time (Year Month Day Hour Minute Second): >> Enter first time (Year Month Day Hour Minute Second): 
+First time:  2023 AD, 01/01 00:00:00
+Second time: 2024 AD, 01/01 -1:00:00
+Error in second time: Hour must be between 0 and 23, got -1
+>> Enter first time (Year Month Day Hour Minute Second): 
+Processed 7 pairs of times, 0 were valid.
