@@ -141,18 +141,6 @@ Run tests:
 ./timediff < test1_input.txt
 ```
 
-## Contributing
-
-🤝 Contributions are welcome! Here's how you can help:
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-Please ensure your PR description clearly describes the changes and their benefits.
-
 ## Support
 
 ⭐ If you find this project useful, please consider:
@@ -167,11 +155,10 @@ Please ensure your PR description clearly describes the changes and their benefi
 
 ## Contact
 
-🧑‍💻 Developed by [Your Name] as a student project at The Open University of Israel.
+🧑‍💻 Developed by IamShaharFar as a student project at The Open University of Israel.
 
 📫 Get in touch:
 - GitHub: [@IamShaharFar](https://github.com/IamShaharFar)
-- Email: your.email@example.com
 
 ---
 
@@ -181,7 +168,7 @@ If this project helped you, give it a ⭐️ and share it with your friends!
 
 ```bash
 # Clone this repository
-git clone https://github.com/yourusername/time-difference-calculator.git
+git clone https://github.com/IamShaharFar/Time-Difference-Calculator.git
 ```
 
-Made with ❤️ by [Your Name]
+Made with ❤️ by IamShaharFar
