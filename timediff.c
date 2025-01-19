@@ -1,26 +1,7 @@
+#include "timediff.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
-
-#define SECONDS_PER_MINUTE 60
-#define MINUTES_PER_HOUR 60
-#define HOURS_PER_DAY 24
-#define DAYS_PER_YEAR 365
-
-#define SECONDS_IN_MINUTE (SECONDS_PER_MINUTE)
-#define SECONDS_IN_HOUR (SECONDS_IN_MINUTE * MINUTES_PER_HOUR)
-#define SECONDS_IN_DAY (SECONDS_IN_HOUR * HOURS_PER_DAY)
-#define SECONDS_IN_YEAR (SECONDS_IN_DAY * DAYS_PER_YEAR)
-
-typedef struct
-{
-    int year;   /* year (negative for BC) */
-    int month;  /* 1-12 */
-    int day;    /* 1-31 */
-    int hour;   /* 0-23 */
-    int minute; /* 0-59 */
-    int second; /* 0-59 */
-} time;
 
 /* days in each month */
 const int days_in_month[] = {0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
@@ -181,63 +162,42 @@ int main()
     long time_difference;
     char error_msg[100];
     int success_count = 0;
+    char line[256];  /* buffer for the line */
 
     print_welcome_message();
 
     /* process input until EOF */
     while (1)
     {
-        /* try to read first time */
-        printf(">> Enter first time (Year Month Day Hour Minute Second): ");
-        read_count = scanf("%d %d %d %d %d %d",
-                           &t1.year, &t1.month, &t1.day,
-                           &t1.hour, &t1.minute, &t1.second);
-
-        /* check if we reached EOF before any numbers were read */
-        if (read_count == EOF)
+        printf("Enter times (Year Month Day Hour Minute Second Year Month Day Hour Minute Second): ");
+        
+        /* clear input buffer before reading new line */
+        if (fgets(line, sizeof(line), stdin) == NULL)
         {
-            break;
+            break;  /* EOF encountered */
         }
 
-        /* check if we got all 6 numbers for first time */
-        if (read_count != 6)
+        read_count = sscanf(line, "%d %d %d %d %d %d %d %d %d %d %d %d",
+                           &t1.year, &t1.month, &t1.day,
+                           &t1.hour, &t1.minute, &t1.second,
+                           &t2.year, &t2.month, &t2.day,
+                           &t2.hour, &t2.minute, &t2.second);
+
+        /* check if we got exactly 12 numbers */
+        if (read_count != 12)
         {
-            printf("\nPair %d: Error - Invalid input format for first time (expected 6 numbers)\n",
-                   pair_number);
-            /* try to read until next line */
-            while (getchar() != '\n' && getchar() != EOF)
-                ;
+            printf("Error - Invalid number of inputs (expected 12 numbers, got %d)\n", read_count);
             pair_number++;
             continue;
         }
 
-        /* validate first time */
+        /* validate both times */
         if (!validate_time(t1, error_msg))
         {
             printf("Error in first time: %s\n", error_msg);
             pair_number++;
             continue;
         }
-
-        /* read second time */
-        printf(">> Enter second time (Year Month Day Hour Minute Second): ");
-        read_count = scanf("%d %d %d %d %d %d",
-                           &t2.year, &t2.month, &t2.day,
-                           &t2.hour, &t2.minute, &t2.second);
-
-        /* check if we got all 6 numbers for second time */
-        if (read_count != 6)
-        {
-            printf("\nPair %d: Error - Invalid input format for second time (expected 6 numbers)\n",
-                   pair_number);
-            /* try to read until next line */
-            while (getchar() != '\n' && getchar() != EOF)
-                ;
-            pair_number++;
-            continue;
-        }
-
-        /* validate second time */
         if (!validate_time(t2, error_msg))
         {
             printf("Error in second time: %s\n", error_msg);

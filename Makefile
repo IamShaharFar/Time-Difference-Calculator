@@ -3,10 +3,9 @@
 CC = gcc
 CFLAGS = -ansi -pedantic -Wall
 TARGET = timediff
-SRCS = timediff.c
 
-$(TARGET): $(SRCS)
-	$(CC) $(CFLAGS) -o $(TARGET) $(SRCS)
+$(TARGET): timediff.c timediff.h
+	$(CC) $(CFLAGS) -o $(TARGET) timediff.c
 
 clean:
 	rm -f $(TARGET)

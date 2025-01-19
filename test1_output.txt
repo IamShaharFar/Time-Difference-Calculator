@@ -5,35 +5,41 @@ Example:
   2023 12 31 23 59 59 2024 1 1 0 0 0
 Press Ctrl+D to exit.
 
->> Enter first time (Year Month Day Hour Minute Second): >> Enter first time (Year Month Day Hour Minute Second): 
+Enter times (Year Month Day Hour Minute Second Year Month Day Hour Minute Second): 
 First time:  2023 AD, 01/01 14:30:45
 Second time: 2023 AD, 01/01 16:45:15
 Time difference: 8070 seconds
 In readable format: 0 years, 0 days, 2 hours, 14 minutes, 30 seconds
->> Enter first time (Year Month Day Hour Minute Second): >> Enter first time (Year Month Day Hour Minute Second): 
+
+Enter times (Year Month Day Hour Minute Second Year Month Day Hour Minute Second): 
 First time:  2023 AD, 01/31 23:59:59
 Second time: 2023 AD, 02/01 00:00:00
 Time difference: 1 seconds
 In readable format: 0 years, 0 days, 0 hours, 0 minutes, 1 seconds
->> Enter first time (Year Month Day Hour Minute Second): >> Enter first time (Year Month Day Hour Minute Second): 
+
+Enter times (Year Month Day Hour Minute Second Year Month Day Hour Minute Second): 
 First time:  2023 AD, 03/31 00:00:00
 Second time: 2023 AD, 04/01 00:00:00
 Time difference: 86400 seconds
 In readable format: 0 years, 1 days, 0 hours, 0 minutes, 0 seconds
->> Enter first time (Year Month Day Hour Minute Second): >> Enter first time (Year Month Day Hour Minute Second): 
+
+Enter times (Year Month Day Hour Minute Second Year Month Day Hour Minute Second): 
 First time:  10 BC, 01/01 00:00:00
 Second time: 5 BC, 01/01 00:00:00
 Time difference: 157680000 seconds
 In readable format: 5 years, 0 days, 0 hours, 0 minutes, 0 seconds
->> Enter first time (Year Month Day Hour Minute Second): >> Enter first time (Year Month Day Hour Minute Second): 
+
+Enter times (Year Month Day Hour Minute Second Year Month Day Hour Minute Second): 
 First time:  2000 AD, 01/01 00:00:00
 Second time: 2068 AD, 02/05 03:14:07
 Time difference: 2147483647 seconds
 In readable format: 68 years, 35 days, 3 hours, 14 minutes, 7 seconds
->> Enter first time (Year Month Day Hour Minute Second): >> Enter first time (Year Month Day Hour Minute Second): 
+
+Enter times (Year Month Day Hour Minute Second Year Month Day Hour Minute Second): 
 First time:  2000 AD, 01/01 00:00:00
 Second time: 2000 AD, 01/01 00:00:00
 Time difference: 0 seconds
 In readable format: 0 years, 0 days, 0 hours, 0 minutes, 0 seconds
->> Enter first time (Year Month Day Hour Minute Second): 
+
+Enter times (Year Month Day Hour Minute Second Year Month Day Hour Minute Second): 
 Processed 6 pairs of times, 6 were valid.
